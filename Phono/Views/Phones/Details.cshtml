@@ -1,0 +1,58 @@
+﻿@model Phono.Models.Phone
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Phone</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.brand.BrandName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.brand.BrandName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneType.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phoneType.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateReleased)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateReleased)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScreenSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScreenSize)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
